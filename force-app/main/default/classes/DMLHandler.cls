@@ -6,7 +6,7 @@
  * @Description: Helper class to facilitate bulk upserts and inserts. Logging is done via the logger classes
  * @Created: 16/11/2022
  * @Last Updated: 16/11/2022
- * @Unit tests: DMLHandlerTests
+ * @Unit tests: DMLHandlerTest
  * @Change log:
  * -----------------------------------------------------------------------------------------------
 */
