@@ -93,34 +93,5 @@ public with sharing class DMLHandler {
         return errorLog;
     }
 
-    public static Integer stringToInteger(String str){
-        Integer result = 0;
-        try{
-            result = Integer.valueOf(str);
-        } catch(Exception e){
-            System.debug('Error converting string to integer: ' + e);
-        }
-        return result;
-    }
-
-    public static Decimal stringToDecimal(String str){
-        Decimal result = 0;
-        try{
-            result = Decimal.valueOf(str);
-        } catch(Exception e){
-            System.debug('Error converting string to decimal: ' + e);
-        }
-        return result;
-    }
-
-    public static Date stringToDate(String str){
-        Date result = Date.today();
-        try{
-            result = Date.valueOf(str);
-        } catch(Exception e){
-            System.debug('Error converting string to date: ' + e);
-        }
-        return result;
-    }
 
 }
