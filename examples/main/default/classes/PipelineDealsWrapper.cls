@@ -22,10 +22,19 @@ public class PipelineDealsWrapper {
 
     public Boolean success;
     public List<Deal> data;
+    public AdditionalData additional_data;
 
     public class Deal {
         public String id;
         public String title;
+    }
+
+    public class AdditionalData {
+        public Pagination_x pagination;
+    }
+    public class Pagination_x {
+        public Boolean more_items_in_collection;
+        public Integer next_start;
     }
 
     public static PipelineDealsWrapper parse(String json) {

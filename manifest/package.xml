@@ -7,6 +7,9 @@
         <members>CalloutValidator</members>
         <members>PipelineDealsWrapper</members>
         <members>CalloutHandlerNamedCredential</members>
+        <members>PipedriveQueuableExample</members>
+        <members>PipedriveQueuableSchedulerExample</members>
+        <members>CalloutHandlerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
