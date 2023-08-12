@@ -108,7 +108,7 @@ public with sharing class DMLHandler {
         try{
             result = Decimal.valueOf(str);
         } catch(Exception e){
-            system.debug('Error converting string to decimal: ' + e);
+            System.debug('Error converting string to decimal: ' + e);
         }
         return result;
     }
@@ -118,7 +118,7 @@ public with sharing class DMLHandler {
         try{
             result = Date.valueOf(str);
         } catch(Exception e){
-            system.debug('Error converting string to date: ' + e);
+            System.debug('Error converting string to date: ' + e);
         }
         return result;
     }

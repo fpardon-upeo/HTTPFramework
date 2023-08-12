@@ -7,6 +7,8 @@
  * -----------------------------------------------------------------------------------------------
  * Description: Example of a callout handler that uses a named credential and that overrides the
  * makeCalloutNoBody method of the CalloutHandler class.
+ * -----------------------------------------------------------------------------------------------
+ * Dependencies: CalloutHandler, Callout
  *
  *
  * Created: 12/08/2023
