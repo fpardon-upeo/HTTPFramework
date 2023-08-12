@@ -15,12 +15,12 @@ public with sharing class DMLHandler {
 
 //----------------------------------------DML METHODS---------------------------------------------------//
 
-    public static void insertRecords(List<sObject> records){
+    public static void insertRecords(List<SObject> records){
         Database.SaveResult[] results = Database.insert(records, false);
         parseSaveResult(results, records);
     }
 
-    public static void upsertRecords(Schema.SObjectField f, List<sObject> records){
+    public static void upsertRecords(Schema.SObjectField f, List<SObject> records){
         Database.UpsertResult[] results = Database.upsert(records, f,false);
         parseUpsertResult(results, records);
     }
@@ -45,7 +45,7 @@ public with sharing class DMLHandler {
         List<Error_Log__c> errorLogs = new List<Error_Log__c>();
 
         for(Integer i=0; i < results.size(); i++) {
-            system.debug('results[i].isSuccess() = ' + results[i].isSuccess());
+            System.debug('results[i].isSuccess() = ' + results[i].isSuccess());
             if(results[i].isSuccess()){
                 //do nothing
                 //system.debug('Success');
@@ -98,7 +98,7 @@ public with sharing class DMLHandler {
         try{
             result = Integer.valueOf(str);
         } catch(Exception e){
-            system.debug('Error converting string to integer: ' + e);
+            System.debug('Error converting string to integer: ' + e);
         }
         return result;
     }
