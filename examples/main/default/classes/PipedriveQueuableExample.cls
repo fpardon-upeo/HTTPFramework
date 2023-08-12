@@ -33,7 +33,7 @@ public class PipedriveQueuableExample implements Queueable {
         callout.method = 'GET';
 
         CalloutHandler caHandler = new CalloutHandler();
-        HttpResponse response = caHandler.makeCalloutNoBody(callout);
+        HttpResponse response = caHandler.makeCallout(callout);
         parsePipelineResult(response);
 
     }

@@ -38,32 +38,15 @@
 
 public virtual class CalloutHandler {
 
-
-    public virtual HttpResponse makeCalloutNoBody(Callout callout) {
+    public virtual HttpResponse makeCallout(Callout callout) {
         // Execute the callout
         CalloutValidator.validate(callout);
         HttpRequest request = new HttpRequest();
         request.setEndpoint(callout.endpoint);
         request.setMethod(callout.method);
-        // Parse the headers
-        if(callout.headers != null){
-            request = parseHeaders(request, callout);
+        if(callout.body != null) {
+            request.setBody(callout.body);
         }
-
-        Http http = new Http();
-        HttpResponse response = http.send(request);
-        return response;
-    }
-
-    public virtual HttpResponse makeCalloutWithBody(Callout callout) {
-        // Execute the callout
-        CalloutValidator.validate(callout);
-
-        System.debug('Callout: ' + callout);
-        HttpRequest request = new HttpRequest();
-        request.setEndpoint(callout.endpoint);
-        request.setMethod(callout.method);
-        request.setBody(callout.body);
         // Parse the headers
         if(callout.headers != null){
             request = parseHeaders(request, callout);

@@ -38,7 +38,7 @@ public with sharing class PipedriveExample {
 
         //Make the callout
         CalloutHandler ca = new CalloutHandler();
-        HttpResponse response = ca.makeCalloutNoBody(callout);
+        HttpResponse response = ca.makeCallout(callout);
         System.debug('Response: ' + response.getBody());
 
         PipelineDealsWrapper wrapper = PipelineDealsWrapper.parse(response.getBody());
@@ -63,7 +63,7 @@ public with sharing class PipedriveExample {
         Callout callout = new Callout();
         CalloutHandlerNamedCredential ca = new CalloutHandlerNamedCredential();
 
-        HttpResponse response = ca.makeCalloutNoBody(callout);
+        HttpResponse response = ca.makeCall(callout);
         System.debug('Response: ' + response.getBody());
 
         PipelineDealsWrapper wrapper = PipelineDealsWrapper.parse(response.getBody());

@@ -138,7 +138,7 @@ private class CalloutHandlerTest {
         callout.headers = new Map<String, String>();
         callout.headers.put('Content-Type', 'application/json');
         CalloutHandler calloutHandler = new CalloutHandler();
-        HttpResponse response = calloutHandler.makeCalloutNoBody(callout);
+        HttpResponse response = calloutHandler.makeCallout(callout);
         System.assertNotEquals(null, response);
         Test.stopTest();
 
@@ -259,7 +259,7 @@ private class CalloutHandlerTest {
         callout.headers.put('Content-Type', 'application/json');
         callout.body = 'test body';
         CalloutHandler calloutHandler = new CalloutHandler();
-        HttpResponse response = calloutHandler.makeCalloutWithBody(callout);
+        HttpResponse response = calloutHandler.makeCallout(callout);
         System.assertNotEquals(null, response);
         Test.stopTest();
     }
