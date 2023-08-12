@@ -3,10 +3,29 @@
  * @Author: Frederik
  * @Copyright: 2021 Upeo Consulting
  * @Uses:
- *
  * -----------------------------------------------------------------------------------------------
- * Description: 
- *
+ * Revision No. 	Author 			Date 			Description
+ * 1.0 			Frederik 		12/08/2023 		Initial version
+ * -----------------------------------------------------------------------------------------------
+ * -----------------------------------------------------------------------------------------------
+ * Description: Virtual class to handle callouts
+ * -----------------------------------------------------------------------------------------------
+ * @method: makeCalloutNoBody(Callout callout)
+ * @description: Makes a callout without a body
+ * @param: Callout callout
+ * @return: HttpResponse
+ * -----------------------------------------------------------------------------------------------
+ * @method: makeCalloutWithBody(Callout callout)
+ * @description: Makes a callout with a body
+ * @param: Callout callout
+ * @return: HttpResponse
+ * -----------------------------------------------------------------------------------------------
+ * @method: parseHeaders(HttpRequest request, Callout callout)
+ * @description: Parses the headers
+ * @param: HttpRequest request, Callout callout
+ * @return: HttpRequest
+ * -----------------------------------------------------------------------------------------------
+ * @dependencies: Callout, CalloutValidator
  *
  * Created: 12/08/2023
  * Last Updated: 12/08/2023

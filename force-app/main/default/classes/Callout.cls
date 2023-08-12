@@ -5,27 +5,20 @@
  * @Uses:
  *
  * -----------------------------------------------------------------------------------------------
- * Description: 
- *
+ * Description: Callout class, used to store callout information
+ * -----------------------------------------------------------------------------------------------
+ * Revision No. 	Author 			Date 			Description
+ * 1.0 			Frederik 		12/08/2023 		Initial version
+ * -----------------------------------------------------------------------------------------------
  *
  * Created: 12/08/2023
  * Last Updated: 12/08/2023
  *
  * Unit tests:
  *
- * Change log:
  * -----------------------------------------------------------------------------------------------
 */
-/**
-@Description:
 
-@Change Log:
-
-@Dependencies:
-
-@Test Classes:
-
-*/
 
 public class Callout {
 
@@ -37,8 +30,6 @@ public class Callout {
     public Map<String, String> headers;
     public String timeout;
     public String retry;
-
-
 
 
 }

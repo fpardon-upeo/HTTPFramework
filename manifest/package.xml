@@ -3,9 +3,10 @@
     <types>
         <members>CalloutHandler</members>
         <members>Callout</members>
-        <members>PipedriveTest</members>
+        <members>PipedriveExample</members>
         <members>CalloutValidator</members>
         <members>PipelineDealsWrapper</members>
+        <members>CalloutHandlerNamedCredential</members>
         <name>ApexClass</name>
     </types>
     <types>
